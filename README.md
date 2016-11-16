@@ -20,7 +20,10 @@ Various helpers I used in different projects.
 
 * returns: List of all filenames in that directory and subdirectory in a flattend list. Filenames include full path.
 
+**load_table_from_xlsx(file_path, sheet_name=None, skip_rows=0)**
+
+* returns: List of List. Each inner list represents one row of the table from the xlsx table.
 
 ### Dependencies
 
-None outside the standard library.
+openpyxl
