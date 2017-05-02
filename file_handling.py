@@ -61,7 +61,7 @@ def load_table_from_xlsx(file_path, sheet_name=None, skip_rows=0):
     result = []
     for v in V[:width]:
         col = []
-        for h in range(1 + skip_rows, length):
+        for h in range(1 + skip_rows, length + 1):
             col.append(str(sh[v + str(h)].value))
         result.append(col)
 

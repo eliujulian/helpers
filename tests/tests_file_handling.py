@@ -9,3 +9,8 @@ class TestFileHandling(TestCase):
 
     def test_limit_ending(self):
         self.assertGreater(len(file_handling.filenames_with_path(folder_path_1, limit_ending='py')), 10)
+
+
+class TestFileHandlingReadExcel(TestCase):
+    def test_read_a_table(self):
+        self.fail('not implemented')
